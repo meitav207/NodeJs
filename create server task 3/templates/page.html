@@ -1,0 +1,176 @@
+<!--Meitav itah && Ben Salomon-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    w
+    <title>Simple HTML Page</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .h1 {
+        text-align: center;
+        font-family: "Paytone One", sans-serif;
+        font-size: 2em;
+        color: rgb(0, 26, 157);
+      }
+      footer {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 15px;
+        font-size: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 26, 157);
+      }
+      .mainBorder {
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        width: 250px;
+        flex-direction: column;
+      }
+
+      .thirdDiv {
+        position: relative;
+        display: inline-block;
+        width: 250px;
+        height: 230px;
+        background-color: rgb(242, 255, 0);
+      }
+      .thirdDiv p {
+        position: relative;
+        font-size: 10em;
+        z-index: 1;
+        margin: auto;
+        padding-left: 20%;
+        padding-top: 5%;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+      .thirdDiv span {
+        position: absolute;
+        top: 30px;
+        padding-right: 49%;
+        transform: rotate(-90deg);
+        font-size: 12px;
+        color: rgb(242, 255, 0);
+        z-index: 2;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .secondDiv {
+        height: 80px;
+        width: 250px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+      }
+      .secondDiv p {
+        position: absolute;
+        text-align: right;
+        margin: auto;
+        margin-left: 5px;
+        padding-left: 20%;
+        font-size: 2.1em;
+      }
+
+      .firstDiv {
+        position: relative;
+        width: 250px;
+        height: 60px;
+        background-color: rgb(223, 226, 226);
+      }
+      .firstDiv p {
+        position: absolute;
+        text-align: right;
+        padding-left: 30%;
+        padding-top: 5px;
+        font-size: 6px;
+      }
+      .firstDiv .h3 {
+        position: absolute;
+        font-size: 10px;
+        padding-bottom: 5px;
+        padding-left: 62%;
+        padding-top: 13%;
+      }
+      .firstDiv .logo {
+        position: absolute;
+        background-color: black;
+        background-size: auto;
+        color: white;
+        padding: 2px 6px;
+        border: 0.5px solid black;
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 15px;
+        font-size: 8px;
+      }
+      .firstDiv .logoSpan {
+        position: absolute;
+        top: 3.2px;
+        font-size: 3px;
+      }
+      .inerDiv {
+        display: flex;
+        border: 0.5px solid rgb(173, 173, 173);
+        width: 800px;
+        margin: auto;
+        background-color: rgb(210, 231, 231);
+        flex-direction: column;
+      }
+      .ByKyle {
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        padding-top: 2%;
+        color: rgb(0, 26, 157);
+      }
+    </style>
+  </head>
+
+  <div class="inerDiv">
+    <body>
+      <!-- use template -->
+      <h1 class="h1"><b>Book Component By Function</b></h1>
+      <div class="mainBorder">
+        <div class="firstDiv">
+          <!--firstPartOfTheBook-->
+          <p>
+            "When you strive to comprehend your code , you create better<br />
+            work and become better at what you do. the code isnt just<br />
+            your job anymore, its your craft. This is why i love Up & Going".<br />
+            <b>-JENN LEKAS,</b>Frontend consultant "
+          </p>
+          <p class="logo">O'REILLY<span class="logoSpan">®</span></p>
+          <h3 class="h3">KYLE SIMPSON</h3>
+        </div>
+        <div class="secondDiv">
+          <!--SecondPartOfTheBook-->
+          <p>
+            <b
+              >SCOPE& <br />
+              CLOSURES</b
+            >
+          </p>
+        </div>
+        <div class="thirdDiv">
+          <!--ThirdPartOfTheBook-->
+          <span><b>YOU DON'T KNOW</b></span>
+          <p><b>JS</b></p>
+        </div>
+      </div>
+      <p class="ByKyle"><b>By Kyle Simpson</b></p>
+      <p style="padding-left: 22%; font-size: 1.5em; color: rgb(77, 77, 77)">
+        Parts of the language that many JavScript<br />
+        programmers simply avoid.
+      </p>
+      <footer><b>Ⓒ 2021 Tania</b></footer>
+    </body>
+  </div>
+</html>
